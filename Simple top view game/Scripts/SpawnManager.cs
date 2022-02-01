@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
     
     void Update()
     {
-        
+        spawnRandom();
     }
 
     private void spawnTest()
