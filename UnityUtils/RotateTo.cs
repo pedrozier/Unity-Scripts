@@ -5,10 +5,11 @@ using UnityEngine;
 public class RotateTo : MonoBehaviour
 {
     public GameObject target;
-    
+    public float rotationSpeed;
+
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -19,7 +20,7 @@ public class RotateTo : MonoBehaviour
     public void RotateToTarget(GameObject target)
     {
         Vector3 relativePos = target.transform.position - this.transform.position;
-        this.gameObject.transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        this.gameObject.transform.rotation = Quaternion.RotateTowards(this.gameObject.transform.rotation, Quaternion.LookRotation(relativePos, Vector3.up),rotationSpeed);
     }
 
 }
