@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         this.transform.Translate(Vector3.forward * speed);
-        DestroyObject(this.gameObject, 3);
+        Destroy(this.gameObject, 3);
     }
 
     private void OnCollisionEnter(Collision collision)

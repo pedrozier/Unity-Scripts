@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     {
         if(life <= 0)
         {
-            DestroyObject(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 
@@ -38,5 +38,5 @@ public class Enemy : MonoBehaviour
             
         }
     }
-
+   
 }
