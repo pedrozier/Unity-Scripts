@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallowPlayer : MonoBehaviour
+public class FollowPlayer : MonoBehaviour
 {
 
     public GameObject cameraSlot;
